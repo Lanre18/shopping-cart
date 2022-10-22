@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.all{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    position:sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+}
+h1{
+    color: white;
+
+}
+.cart-box{
+    position: absolute;
+    left: 72%;
+    top: 25%;
+    /* border: 1px solid black; */
+    width: 26% !important;
+    padding: 10px 20px;
+}
+h2{
+    font-size: x-large;
+    padding: 15px 10px;
+}
+.cart-window{
+    border: 1px solid lightgray;
+    border-top: none;
+    position: fixed;
+    top: 12vh;
+    background-color: white;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    /* width: 40%; */
+}
+.hide{
+    display: none;
+}
+.cart-wrapper{
+    overflow-y: auto;
+    max-height: 350px;
+}
+.sub-total{
+    text-align: right;
+    padding: 5px;
+}
+.checkout,
+.view-cart{
+    width: 95%;
+    text-align: center;
+    cursor: pointer;
+    background-color: brown;
+    font-size: large;
+    color: white;
+    margin: 10px auto;
+    padding: 10px 15px;
+}
+.view-cart{
+    background-color: white;
+    border: 2px solid brown;
+    color: brown;
+}
+.cart-icon{
+    text-align: right;
+}
+.non-empty{
+    /* content: "0"; */
+    font-size: 20px;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    /* top: -4%; */
+    bottom: 4px;
+    right: 3%;
+    background-color: red;
+    border-radius: 50%;
+}
+.cart-item{
+    display:grid ;
+    grid-template-columns:  3fr 6fr 1fr ;
+    padding: 5% 2%;
+    border-bottom: 1px solid lightgray;
+}
+.cart-item img{
+    width: 100%;
+}
+.cart-item .details{
+    padding-left: 10%;
+}
+.cart-item h3{
+    text-align: left;
+    margin-bottom: 25%;
+}
+.cart-item .price{
+    display: block;
+    text-align: right;
+    margin-top: 35%;
+}
+.cart-item .unit{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.cart-item .category{
+    display: block;
+    margin-top: 5%;
+}
+
+.cancel{
+    color: brown;
+    text-align: right;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width:80%;
+}
+.shop-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    margin-top: 4rem;
+}
+.card-item{
+    width: 100%;
+    /* max-height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.card-item img{
+    width: 45%;
+}
+.card-item .details{
+    text-align: justify;
+}
+/* .card-item p,  */
+.card-item h3{
+    margin-top: 10px;
+}
+.card-item h3{
+    text-align: center;
+}
+.card-item .price{
+    display: block;
+    margin-top: 10px;
+}
+.card-item .category{
+    display: block;
+    margin-top: 10px;
+}
+/* .card-item span{
+    display: block;
+    margin-top: 10px;
+
+} */
+#more{
+    display: none;
+}
+#myBtn{
+    cursor: pointer;
+}
+#dots{
+    max-height: 200px;
+}
+
+ .add-to-cart-btn{
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: brown;
+    border: 3px ;
+    color: white;
+    display: block;
+    margin-top: 10px;
+}
+.unit .btn-minus{
+    cursor: pointer;
+}
+.unit .btn-plus{
+    cursor: pointer;
+}
+/* .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    padding: 10px 8px;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    background-color: brown;
+    padding:.8px;
+}
+.search input::placeholder{
+    padding: 10px;
+}
+.search i{
+    color: white;
+} */
